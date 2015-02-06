@@ -1,0 +1,4 @@
+<h1><%= @song.title %></h1>
+
+<p>Release date: <%= @song.released_on.strftime("%e %B %Y") if @song.released_on %></p>
+<p>Length: <%= @song.length/60 %> minutes <%= @song.length%60 %> seconds</p>
